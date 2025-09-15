@@ -459,7 +459,8 @@ transition: 0.2s ease-in-out;
   .Naglowek h1 {  font-size: 65px;
     display: flex;
     color:white;
-     align-content: center;}
+     align-content: center;
+                 color: black;}
 
 
 
@@ -752,6 +753,7 @@ width: 120px;
 
 
    }
+
 
 
 
