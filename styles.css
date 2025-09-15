@@ -5,6 +5,10 @@
   padding: 0px;
   color: black;}
     
+h1, 
+h2,
+h3
+{color: black;}
 
 html {
   scroll-behavior: smooth;
@@ -748,5 +752,6 @@ width: 120px;
 
 
    }
+
 
 
