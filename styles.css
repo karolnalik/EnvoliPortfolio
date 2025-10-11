@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sen:wght@400..800&display=swap');
 
+
+
+
+
+
 * {margin: 0px;
   box-sizing: border-box;
-  padding: 0px;
-  color: black;}
+  padding: 0px;}
     
-h1, 
-h2,
-h3
-{color: black;}
+
+
 
 html {
   scroll-behavior: smooth;
@@ -16,15 +18,24 @@ html {
 
 
 
+
 :root {
-  --buttoncolor1: rgb(4, 0, 255);
+  --buttoncolor1: rgb(0, 91, 62);
 }
+
+
+
 
 
 body {
   text-align: center;
   font-family: "Nunito", sans-serif;
 }
+
+
+
+
+
 
 
 
@@ -92,7 +103,7 @@ font-size: 16px;
 
 ul a:hover {
 
-  color: rgb(129, 125, 255);
+  color: rgb(0, 175, 129);
   transition: 0.3s ease-in-out;
 
 }
@@ -172,16 +183,18 @@ height: 43px;
 cursor: pointer;
 top: 22px;
 color: rgb(255, 252, 252);
-font-weight: 700;
-background: linear-gradient(30deg, rgb(7, 34, 102), rgb(0, 28, 98)) padding-box,
-linear-gradient(30deg, rgb(47, 0, 201), rgb(137, 54, 255)) border-box;
+font-weight: 600;
+background: linear-gradient(30deg, rgb(7, 102, 70), rgb(2, 56, 24)) padding-box,
+linear-gradient(30deg, rgb(191, 192, 192), rgb(142, 207, 153)) border-box;
 border-radius: 12px;
+  transition: 0.3s;
   border: 0.12rem solid transparent;
 
 }
 
 .button-menu:hover {
   transform: translateY(-2.5px);
+  transition: 0.3s;
 }
 
 .buttom-menu {}
@@ -208,8 +221,8 @@ h4
 button:hover
 
 {
-  box-shadow: 5px rgba(17, 57, 217, 0.976);
-  background-color: rgb(0, 170, 255);
+  box-shadow: 5px rgba(17, 217, 180, 0.976);
+  background-color: rgb(0, 255, 153);
   transition: .2s ease-out;
   color: rgb(252, 252, 252);
 }
@@ -259,9 +272,11 @@ button:hover
 
   .Naglowek {
 padding-top: 220px;
-background-image: url(1.png); 
+background-image: url(./wallpaper-blob.png); 
 background-position: 100% 150%;
 background-size: cover;
+display: flex;
+flex-direction: column;
 height: 700px; 
 z-index:2;
 clip-path: polygon(100% 0%, 0% 0% , 0.00% 93.70%, 3.33% 93.57%, 6.67% 93.45%, 10.00% 93.36%, 13.33% 93.27%, 16.67% 93.21%, 20.00% 93.16%, 23.33% 93.13%, 26.67% 93.12%, 30.00% 93.12%, 33.33% 93.14%, 36.67% 93.18%, 40.00% 93.23%, 43.33% 93.30%, 46.67% 93.39%, 50.00% 93.49%, 53.33% 93.61%, 56.67% 93.75%, 60.00% 93.90%, 63.33% 94.08%, 66.67% 94.26%, 70.00% 94.47%, 73.33% 94.69%, 76.67% 94.93%, 80.00% 95.18%, 83.33% 95.45%, 86.67% 95.73%, 90.00% 96.03%, 93.33% 96.35%, 96.67% 96.68%, 100.00% 97.03%);
@@ -296,7 +311,7 @@ clip-path: polygon(100% 0%, 0% 0% , 0.00% 93.70%, 3.33% 93.57%, 6.67% 93.45%, 10
     padding: 10px;
      text-transform: uppercase;
     margin: 10px;
-  color: black;
+    color: rgba(250, 253, 255, 0.951);
 }
 
 
@@ -307,6 +322,7 @@ clip-path: polygon(100% 0%, 0% 0% , 0.00% 93.70%, 3.33% 93.57%, 6.67% 93.45%, 10
 
 .Naglowek h1, p, button {position: relative;
    text-align: center;
+   display: block;
    top:90px;  
     z-index:220;}
 
@@ -317,8 +333,7 @@ clip-path: polygon(100% 0%, 0% 0% , 0.00% 93.70%, 3.33% 93.57%, 6.67% 93.45%, 10
 
 .Naglowek h1, p {position: relative;
    text-align: left;
-    top:150px;
-                  color: black;}
+    top:150px;}
 
 
 
@@ -343,9 +358,9 @@ clip-path: polygon(100% 0%, 0% 0% , 0.00% 93.70%, 3.33% 93.57%, 6.67% 93.45%, 10
 .Naglowek p {color: rgb(240, 240, 240);
   position: relative;
   font-weight: 500;
-   text-align: left; 
-   top:16px; 
-   margin-left: 66px;}
+   text-align: center;
+   display: flex;
+   top:16px; }
 
 
 
@@ -353,17 +368,20 @@ clip-path: polygon(100% 0%, 0% 0% , 0.00% 93.70%, 3.33% 93.57%, 6.67% 93.45%, 10
 .button2 {
 
 position: relative;
-top: 180px; 
-left: -120px;
-padding: 11px 20px;
-height: 43px;
+top: 220px; 
+align-content: center;
+margin: 0 auto;
+display: flex;
+justify-content: center;
+padding: 13px 20px;
+height: 45px;
  font-size: 15px; 
 cursor: pointer;
 color: rgb(255, 252, 252);
-font-weight: 700;
+font-weight: 600;
 
-background: linear-gradient(30deg, rgb(28, 40, 69), rgb(0, 37, 128)) padding-box,
-linear-gradient(30deg, rgb(183, 90, 211), rgb(0, 58, 205)) border-box;
+background: linear-gradient(30deg, rgb(39, 187, 66), rgb(18, 158, 97)) padding-box,
+linear-gradient(30deg, rgb(3, 152, 77), rgb(198, 199, 199)) border-box;
 border-radius: 22px;
   border: 0.12rem solid transparent;
 
@@ -373,21 +391,39 @@ transition: 0.2s ease-in-out;
 
 
   
+  animation: 2s appear;
+  
+ 
 
 }
 
 
+
+@keyframes appear {
+  from {
+    transform: translateY(90px);
+    scale: 100% 1;
+    opacity:0;
+  }
+
+  to {
+
+    scale: 100% 1;
+    opacity: 2;
+  }
+}
 
 
 
 
 .button2 span {
 
-  padding-left: 8px;
+  padding-left: 5px;
    position: relative;
-   top: 3px;
+   top: 2px;
    font-size: 16px; 
    color: rgb(255, 254, 254);
+     transition: 0.3s;
   
   }
 
@@ -402,13 +438,15 @@ transition: 0.2s ease-in-out;
 
 {
  transform: translateX(3px);
- transition: 0.2s ease-in-out;
+  transition: 0.3s;
 
   }
 
 .button2:hover {
 
-  transform: translateY(-2px);
+
+    transition: 0.3s;
+
 }
 
 
@@ -460,8 +498,7 @@ transition: 0.2s ease-in-out;
   .Naglowek h1 {  font-size: 65px;
     display: flex;
     color:white;
-     align-content: center;
-                 color: black;}
+     align-content: center;}
 
 
 
@@ -475,7 +512,9 @@ transition: 0.2s ease-in-out;
  
  {font-size:1rem;
   display: flex; 
-  align-content: center;}
+
+  align-content: center;
+color: green;}
 
 
  }
@@ -506,7 +545,7 @@ h6 {color: rgba(0, 0, 0, 0.879);
   position: relative; 
   bottom: 100px;
   z-index: 1; 
-  background-image: url("tapeta1.png");
+  background-image: url("wallpaper-blob.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -536,13 +575,15 @@ h6 {color: rgba(0, 0, 0, 0.879);
 
 
 .Naglowek2 h1 {position: relative;
-   text-align: left;
+ 
    top: 235px;
    line-height: 25px;
 }
 
 
-
+.Naglowek2 h1 span {color: rgb(0, 202, 111); padding-left: 10px;
+  font-weight: 700;
+}
 
 
 
@@ -553,15 +594,39 @@ h6 {color: rgba(0, 0, 0, 0.879);
 
 .Naglowek2 p {text-indent: 0px;
 
-  color: rgba(255, 255, 255, 0.716);
-  text-align: left;
-width: 550px;
+  color: rgb(174, 233, 202);
+
+margin: 0 auto;
+text-align: center;
    display: flex; 
+  position: relative;
+   top: 220px;
    justify-content: center;
-font-weight: 500;
+font-weight: 600;
 font-size: 15px;
-   float: left;
-   margin: 15px;}
+
+   margin: 15px;
+    animation: 1.8s appear;
+  
+ 
+
+}
+
+
+
+@keyframes appear {
+  from {
+    transform: translateY(70px);
+    scale: 100% 1;
+    opacity:0;
+  }
+
+  to {
+
+    scale: 100% 1;
+    opacity: 1;
+  }
+}
 
 
 
@@ -592,16 +657,13 @@ font-size: 15px;
 .Naglowek2
 
 {padding-top:60px;
-float: left;
-width: 35%;
-padding-left: 40px;
+
+
 margin: 20px;
 height: 500px; 
 
+
   }
-
-
-
 
 
 
@@ -615,17 +677,40 @@ height: 500px;
    .Naglowek2 h1 {
     
 font-size: 65px;
-    font-weight: 900;
+    font-weight: 600;
     padding: 10px;
-   line-height: 35px;
-   text-align: left;
-    margin: 0 auto;
+   line-height: 25px;
+   position: relative;
+   top: 290px;
+   text-align: center;
     padding-bottom: 50px;
     color: rgb(255, 255, 255);
     width: 100%;
+    display: flex;
+    justify-content: center;
+
+
+        animation: 1.3s appear;
+  
+ 
 
 }
 
+
+
+@keyframes appear {
+  from {
+    transform: translateY(70px);
+    scale: 100% 1;
+    opacity:0;
+  }
+
+  to {
+
+    scale: 100% 1;
+    opacity: 1;
+  }
+}
 
 
 
@@ -719,7 +804,7 @@ transform: scale(0.77);
 
 
 
-{.Naglowek2 h1, .Naglowek2 p{float: left; 
+{.Naglowek2 h1, .Naglowek2 p{
   position: relative; 
   top: 20px; 
    padding: 30px; }}
@@ -754,8 +839,4 @@ width: 120px;
 
 
    }
-
-
-
-
 
