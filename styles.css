@@ -750,7 +750,7 @@ width: 120px;
 
 padding:40px;
 border-radius: 18px 12PX 16px 7px;
-background-color: rgb(0, 10, 3);
+background-color: rgb(42, 71, 51);
 border: 1px solid rgb(0, 202, 111);
 box-shadow: 1px 2px 2px rgb(0, 202, 111);
 
@@ -758,7 +758,7 @@ box-shadow: 1px 2px 2px rgb(0, 202, 111);
 
 .card img{
   color: white;
-  background: rgba(0, 0, 0, 0.134);
+  background: rgb(0, 231, 108);
   font-size: 35px;
   padding: 18px;
   border-radius: 100px / 60px;
