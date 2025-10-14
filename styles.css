@@ -1,13 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sen:wght@400..800&display=swap');
-
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 * {margin: 0px;
   box-sizing: border-box;
-  padding: 0px;}
+  padding: 0px;
+  font-family: "Nunito", sans-serif;
+}
     
 
 
@@ -20,7 +18,7 @@ html {
 
 
 :root {
-  --buttoncolor1: rgb(0, 91, 62);
+  --buttoncolor1: rgb(0, 55, 37);
 }
 
 
@@ -30,6 +28,7 @@ html {
 body {
   text-align: center;
   font-family: "Nunito", sans-serif;
+  background-color:rgb(2, 21, 11);
 }
 
 
@@ -54,9 +53,7 @@ top: -37px;
 
 }
 
-.logo img {
- width: 90px; 
-  height: 90px;}
+
 
 
 
@@ -187,7 +184,7 @@ top: 22px;
 color: rgb(255, 252, 252);
 font-weight: 600;
 background: linear-gradient(30deg, rgb(7, 102, 70), rgb(2, 56, 24)) padding-box,
-linear-gradient(30deg, rgb(191, 192, 192), rgb(142, 207, 153)) border-box;
+linear-gradient(30deg, rgb(0, 142, 142), rgb(0, 236, 110)) border-box;
 border-radius: 12px;
   transition: 0.3s;
   border: 0.12rem solid transparent;
@@ -278,7 +275,7 @@ background-image: url(./wallpaper-blob.png);
 background-position: 100% 150%;
 background-size: cover;
 display: flex;
-flex-direction: column;
+
 height: 700px; 
 z-index:2;
 clip-path: polygon(100% 0%, 0% 0% , 0.00% 93.70%, 3.33% 93.57%, 6.67% 93.45%, 10.00% 93.36%, 13.33% 93.27%, 16.67% 93.21%, 20.00% 93.16%, 23.33% 93.13%, 26.67% 93.12%, 30.00% 93.12%, 33.33% 93.14%, 36.67% 93.18%, 40.00% 93.23%, 43.33% 93.30%, 46.67% 93.39%, 50.00% 93.49%, 53.33% 93.61%, 56.67% 93.75%, 60.00% 93.90%, 63.33% 94.08%, 66.67% 94.26%, 70.00% 94.47%, 73.33% 94.69%, 76.67% 94.93%, 80.00% 95.18%, 83.33% 95.45%, 86.67% 95.73%, 90.00% 96.03%, 93.33% 96.35%, 96.67% 96.68%, 100.00% 97.03%);
@@ -299,70 +296,6 @@ clip-path: polygon(100% 0%, 0% 0% , 0.00% 93.70%, 3.33% 93.57%, 6.67% 93.45%, 10
 
 
 
-
-
-
-
-
-
-
-.Naglowek h1 {
-    font-size: 1rem;
-    cursor: default;
-    font-weight: 500;
-    padding: 10px;
-     text-transform: uppercase;
-    margin: 10px;
-    color: rgba(250, 253, 255, 0.951);
-}
-
-
-
-
-
-
-
-.Naglowek h1, p, button {position: relative;
-   text-align: center;
-   display: block;
-   top:90px;  
-    z-index:220;}
-
-
-
-
-
-
-.Naglowek h1, p {position: relative;
-   text-align: left;
-    top:150px;}
-
-
-
-
-
-
-
-
-.Naglowek h1 {position: relative;
-   color: rgb(251, 251, 251);
-   text-align: left;
-   top: 20px;
-   margin-left: 52px;
-   font-weight: 700;
-    text-transform:none;
-    font-size: 65px;}
-
-
-
-
-
-.Naglowek p {color: rgb(240, 240, 240);
-  position: relative;
-  font-weight: 500;
-   text-align: center;
-   display: flex;
-   top:16px; }
 
 
 
@@ -463,31 +396,6 @@ transition: 0.2s ease-in-out;
 
 
 
-.Naglowek h1 span {color: rgb(0, 234, 255);
-   font-weight: 700; 
-   padding: 0px;
-   border-radius: 5px / 6px;
-
-
-   width: 545px; 
-   position: relative;
-   top: 6px;
-   text-transform:none;}
-
-
-
-
-
-
-
-
-.naglowek p {margin: 50px;}
-
-
-
-
-
-
 
 @media screen and (max-width:700px) 
 {
@@ -497,14 +405,7 @@ transition: 0.2s ease-in-out;
 
 
 
-  .Naglowek h1 {  font-size: 65px;
-    display: flex;
-    color:white;
-     align-content: center;}
-
-
-
-
+ 
 
 
 
@@ -575,16 +476,8 @@ h6 {color: rgba(0, 0, 0, 0.879);
 
 
 
-
-.Naglowek2 h1 {position: relative;
- 
-   top: 235px;
-   line-height: 25px;
-}
-
-
 .Naglowek2 h1 span {color: rgb(0, 202, 111); padding-left: 10px;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 
@@ -602,10 +495,10 @@ margin: 0 auto;
 text-align: center;
    display: flex; 
   position: relative;
-   top: 220px;
+   top: 200px;
    justify-content: center;
 font-weight: 600;
-font-size: 15px;
+font-size: 16px;
 
    margin: 15px;
     animation: 1.8s appear;
@@ -678,18 +571,17 @@ height: 500px;
 
    .Naglowek2 h1 {
     
-font-size: 65px;
+font-size: 57px;
     font-weight: 600;
     padding: 10px;
-   line-height: 25px;
+   line-height: 55px;
    position: relative;
    top: 290px;
    text-align: center;
     padding-bottom: 50px;
     color: rgb(255, 255, 255);
     width: 100%;
-    display: flex;
-    justify-content: center;
+  font-family: "Nunito", sans-serif;
 
 
         animation: 1.3s appear;
@@ -842,4 +734,44 @@ width: 120px;
 
    }
 
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color:rgb(0, 23, 11);
+  height: 100%;
 
+}
+
+.card {
+
+padding:40px;
+border-radius: 18px 12PX 16px 7px;
+background-color: rgb(0, 10, 3);
+border: 1px solid rgb(0, 202, 111);
+box-shadow: 1px 2px 2px rgb(0, 202, 111);
+
+}
+
+.card img{
+  color: white;
+  background: rgba(0, 0, 0, 0.134);
+  font-size: 35px;
+  padding: 18px;
+  border-radius: 100px / 60px;
+  border: 1px solid rgb(0, 202, 111);
+
+  width: 61px;
+  margin-bottom: 10px;
+}
+
+.card h2 {
+  color: rgb(0, 202, 111);
+  font-weight: 600;
+    font-size: 22px;
+}
+.card  p {
+  color: rgb(237, 255, 247);
+  font-weight: 300;
+  font-size: 13px;
+}
