@@ -799,7 +799,7 @@ margin: 30px;}
 .resp-zdjecie  {float: left; width: 40%;}
 
 
-.resp-zdjecie img {width: 586px; height: 500px;border-radius: 20px;}
+.resp-zdjecie img {width: 546px; height:450px;border-radius: 20px;}
 
 @media only screen and (max-width: 800px) {
   .resp-zdjecie img {width: 286px; height: 200px;border-radius: 20px; display: flex; justify-content: center; margin: 0 auto;;}
