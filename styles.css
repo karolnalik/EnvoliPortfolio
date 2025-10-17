@@ -18,7 +18,7 @@ html {
 
 
 :root {
-  --buttoncolor1: rgb(0, 55, 37);
+  --buttoncolor1: rgb(1, 85, 43);
 }
 
 
@@ -28,7 +28,7 @@ html {
 body {
   text-align: center;
   font-family: "Nunito", sans-serif;
-  background-color:rgb(2, 21, 11);
+  background-color:rgb(2, 23, 12);
 }
 
 
@@ -119,6 +119,8 @@ ul a:hover {
  {
   
   ul {display: none;}
+  .button-menu{display: none;}
+
 
 
 }
@@ -127,7 +129,22 @@ ul a:hover {
 
 
 
+.hamburger-menu {
+  display: none;
+  color: white;
+  cursor: pointer;
+  font-size: 40px;
+  padding:10px;
+}
+@media  screen and (max-width: 700px)
 
+ {
+  
+    .hamburger-menu {display: block;}
+
+
+
+}
 
 
 nav {
@@ -176,13 +193,13 @@ transition-delay: 0s;
 
 position: relative;
 left: 20px; 
-padding: 11px 20px;
-height: 43px;
- font-size: 15px; 
+padding: 10px 20px;
+height: 42px;
+ font-size: 14px; 
 cursor: pointer;
 top: 22px;
 color: rgb(255, 252, 252);
-font-weight: 600;
+font-weight: 700;
 background: linear-gradient(30deg, rgb(7, 102, 70), rgb(2, 56, 24)) padding-box,
 linear-gradient(30deg, rgb(0, 142, 142), rgb(0, 236, 110)) border-box;
 border-radius: 12px;
@@ -308,8 +325,8 @@ align-content: center;
 margin: 0 auto;
 display: flex;
 justify-content: center;
-padding: 13px 20px;
-height: 45px;
+padding: 13px 30px;
+height: 47px;
  font-size: 15px; 
 cursor: pointer;
 color: rgb(255, 252, 252);
@@ -388,7 +405,13 @@ transition: 0.2s ease-in-out;
 
 
 
-
+@media  screen and (max-width: 800px) {
+  .button2{
+  position: relative;
+top: 80px;
+transform: translate(0%, 20%);
+}
+}
 
 
 
@@ -590,8 +613,20 @@ font-size: 57px;
 
 }
 
-
-
+@media  screen and (max-width: 800px) {
+  .Naglowek2 h1{font-size: 37px;
+  position: relative;
+top: 80px;
+transform: translate(0%, 80%);
+}
+}
+@media  screen and (max-width: 800px) {
+  .Naglowek2 p{
+  position: relative;
+top: 80px;
+transform: translate(0%, 60%);
+}
+}
 @keyframes appear {
   from {
     transform: translateY(70px);
@@ -609,60 +644,6 @@ font-size: 57px;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.fota-omnie {float: right;
-  position: relative; 
-  top: 120px; 
-  left: 10px; 
-  margin: 30px;
-  border-radius: 290px 650px / 220px 220px; 
-border-top: 41px solid rgba(48, 2, 255, 0.353);
-border-bottom: 21px solid rgba(27, 2, 255, 0.353);
-border-left: 21px solid rgba(2, 40, 255, 0.353);
-border-right: 21px solid rgba(32, 2, 255, 0.353);
-background-image: linear-gradient(10deg, rgba(255, 255, 255, 0.896), rgb(144, 107, 201));
-transform: scale(0.001);
-
-
-
-}
-.fota-omnie2 {float: right;
-  position: relative; 
-  top: 120px; 
-  left: 10px; 
-  margin: 30px;
-  border-radius: 290px 150px/ 70px 210px; 
-border-top: 31px solid rgba(48, 2, 255, 0.353);
-border-bottom: 21px solid rgba(27, 2, 255, 0.353);
-border-left: 21px solid rgba(2, 40, 255, 0.353);
-border-right: 21px solid rgba(32, 2, 255, 0.353);
-background-image: linear-gradient(10deg, rgba(77, 77, 185, 0.57), rgb(102, 0, 255));
-transform: scale(0.77);
-
-
-
-}
 
 
 
@@ -740,7 +721,7 @@ width: 120px;
   flex-wrap: wrap;
   margin: 10px;
   gap: 20px;
-  justify-content: space-around;
+  justify-content: center;
   background-color:rgb(0, 23, 11);
   height: 100%;
 
@@ -748,33 +729,95 @@ width: 120px;
 
 .card {
 
-padding:40px;
-border-radius: 18px 12PX 16px 7px;
-background-color: rgb(42, 71, 51);
-border: 1px solid rgb(0, 202, 111);
-box-shadow: 1px 2px 2px rgb(0, 202, 111);
+padding:70px;
+border-radius: 11px;
+background-color: rgba(3, 9, 5, 0.543);
+transition: 0.3s ease-in-out;
 
+
+
+}
+
+.card:hover {
+  scale: 0.98;
+  transition: 0.3s;
 }
 
 .card img{
   color: white;
-  background: rgb(0, 231, 108);
+  background: rgb(1, 83, 39);
   font-size: 35px;
-  padding: 18px;
-  border-radius: 100px / 60px;
-  border: 1px solid rgb(0, 202, 111);
-
-  width: 61px;
-  margin-bottom: 10px;
+  padding: 14px;
+  border-radius: 9px;
+ 
+  display: flex;
+  justify-content: flex-start;
+width: 51px;
+  margin-bottom: 15px;
 }
 
 .card h2 {
-  color: rgb(0, 202, 111);
+  color: rgb(0, 112, 62);
   font-weight: 600;
-    font-size: 22px;
+  text-align: left;
+    font-size: 20px;
 }
 .card  p {
   color: rgb(237, 255, 247);
   font-weight: 300;
   font-size: 13px;
+    text-align: left;
+}
+
+.uslugi h1 {
+  color: white;
+  font-weight: 700;
+  margin: 20px;
+  padding: 0px;
+position: relative;
+bottom: 30px;
+  font-size: 40px;
+}
+
+.uslugi p {
+  color: white;
+  font-size: 17px;
+  position: relative;
+bottom: 30px;
+}
+
+.uslugi {padding: 10px;
+margin: 15px;}
+
+
+.sekcja-oferta
+{display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+padding-top: 70px;
+margin: 30px;}
+.resp-zdjecie  {float: left; width: 40%;}
+
+
+.resp-zdjecie img {width: 586px; height: 500px;border-radius: 20px;}
+
+@media only screen and (max-width: 800px) {
+  .resp-zdjecie img {width: 286px; height: 200px;border-radius: 20px; display: flex; justify-content: center; margin: 0 auto;;}
+}
+
+.oferta {display: flex;
+flex-direction: column;
+float: right;
+width: 40%;
+
+}
+
+.oferta h2 {display: flex; justify-content: center;
+align-items: center;
+margin: 0 auto;
+color: white;
+margin: 20px;
+font-size: 40px;
+font-weight: 500;
+margin-left: 300px;
 }
