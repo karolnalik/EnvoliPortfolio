@@ -28,7 +28,11 @@ html {
 body {
   text-align: center;
   font-family: "Nunito", sans-serif;
-  background-color:rgb(2, 23, 12);
+  background-image: url(./wallpaper-blob.png); 
+background-position: 100% 150%;
+background-size: cover;
+
+ 
 }
 
 
@@ -288,9 +292,7 @@ button:hover
 
   .Naglowek {
 padding-top: 220px;
-background-image: url(./wallpaper-blob.png); 
-background-position: 100% 150%;
-background-size: cover;
+
 display: flex;
 
 height: 700px; 
@@ -723,7 +725,9 @@ width: 120px;
   gap: 20px;
   justify-content: center;
   background-color:rgb(0, 23, 11);
-  height: 100%;
+
+
+
 
 }
 
@@ -787,37 +791,35 @@ bottom: 30px;
 }
 
 .uslugi {padding: 10px;
-margin: 15px;}
-
+margin: 15px;
+}
 
 .sekcja-oferta
-{display: flex;
-flex-direction: row;
-flex-wrap: wrap;
+{
 padding-top: 70px;
 margin: 30px;}
-.resp-zdjecie  {float: left; width: 40%;}
+
+.resp-zdjecie  {}
 
 
-.resp-zdjecie img {width: 546px; height:450px;border-radius: 20px;}
+.resp-zdjecie img {width: 500px; height:450px;border-radius: 20px; position: relative; right: 250px;   }
 
 @media only screen and (max-width: 800px) {
-  .resp-zdjecie img {width: 286px; height: 200px;border-radius: 20px; display: flex; justify-content: center; margin: 0 auto;;}
+  .resp-zdjecie img {width: 286px; height: 200px;border-radius: 20px; display: flex; justify-content: center; margin: 0 auto;}
 }
 
-.oferta {display: flex;
-flex-direction: column;
-float: right;
-width: 40%;
 
-}
 
-.oferta h2 {display: flex; justify-content: center;
-align-items: center;
+
+.oferta h2 {
 margin: 0 auto;
+position: relative;
+left: 270px;
+top: -440px;
 color: white;
-margin: 20px;
+
 font-size: 40px;
 font-weight: 500;
-margin-left: 300px;
+width: 400px;
+
 }
