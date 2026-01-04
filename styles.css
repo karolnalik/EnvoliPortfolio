@@ -1,62 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 * {margin: 0px;
   box-sizing: border-box;
   padding: 0px;
-  font-family: "Inter", sans-serif;
+  font-family: "Rethink Sans", sans-serif;
 }
     
-
-
-
 html {
   scroll-behavior: smooth;
 }
-
-
-
 
 :root {
   --buttoncolor1: rgb(1, 85, 43);
 }
 
-
-
-
-
 body {
-  text-align: center;
-  font-family: "Nunito", sans-serif;
-background-color: rgb(0, 4, 27);
-
- 
+text-align: center;
+font-family: "Nunito", sans-serif;
+background-color: rgb(29, 35, 39);
 }
-
-
-
-
-
-
-
 
     .logo 
     
     {
-
-
 height:60px; 
 border-radius: 5px; 
 DISPLAY: INLINE;
 position: relative; 
 left: -50px;
 top: -37px;
-
-
 }
-
-
-
-
 
 ul {
 
@@ -64,129 +36,88 @@ ul {
     list-style:none;
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 26px;
     position: relative;
     left: 50px;
 
 }
 
-
-
-
-
-
-
-
-
 ul a 
 {
 
 text-decoration: none;
-color: rgba(255, 255, 255, 0.954);
-font-weight: 400;
-  font-family: "Nunito", sans-serif;
+color: rgba(22, 22, 48, 0.95);
+font-weight: 500;
+  font-family: "Rethink Sans", sans-serif;
 position: relative;
-top: 33px;
+top: 27px;
 right: 12px;
 padding-bottom: 7px;
-font-size: 18px; 
+font-size: 16px; 
 
  }
 
 
-
-
-
-
-
-
-
 ul a:hover {
 
-  color: rgb(0, 175, 129);
-  transition: 0.3s ease-in-out;
-
+  color: rgb(102, 185, 237);
+  transition: 0.1s ease-in-out;
 }
-
-
-
-
-
-
-
 
 @media  screen and (max-width: 700px)
 
  {
-  
   ul {display: none;}
   .button-menu{display: none;}
 
-
-
 }
-
-
-
-
 
 .hamburger-menu {
   display: none;
   color: white;
+
   cursor: pointer;
   font-size: 40px;
   padding:10px;
 }
-@media  screen and (max-width: 700px)
+
+@media  screen and (max-width: 1200px)
 
  {
-  
-    .hamburger-menu {display: block;}
-
-
-
+    .hamburger-menu {display: block;color: black;}
 }
-
-
 nav {
+
 
 display: flex; 
 justify-content:space-around;
-background-color: rgba(0, 30, 95, 0);
-position: absolute;
+background-color: rgba(95, 19, 0, 0);
+position: fixed;
 width: 100%;
-transition: 1s ease-in-out;
+transition: 0.1s ease-in-out;
 z-index: 100;
-height: 80px;
+height: 77px;
+z-index: 1000;
+top: 0px;
 
 }
-
-
-
-
-
-
-
 
 .scrollmenu {
 
 width: 100%;
-position: absolute;
-transform: translateY(-100px);
+display: flex; 
+justify-content:space-around;
 position: fixed;
-
-height: 80px;
+background-color: rgba(255, 255, 255, 0.99);
+top: 0px;
+height: 77px;
 transition: 0.1s;
+opacity: 1;
 transition-delay: 0s;
+box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.438);
+z-index: 1000;
 
 }
-
-
-
-
-
-
-
 
 .button-menu 
 
@@ -194,27 +125,28 @@ transition-delay: 0s;
 
 position: relative;
 left: 20px; 
-padding: 10px 25px;
-height: 45px;
- font-size: 15px; 
+padding: 10px 20px;
+height: 36px;
+font-size: 13px; 
 cursor: pointer;
 top: 20px;
 color: rgb(255, 252, 252);
+background-color: rgb(46, 238, 255);
 font-weight: 700;
-background: linear-gradient(30deg, rgb(0, 202, 111), rgb(0, 202, 111)) padding-box,
-linear-gradient(30deg, rgb(0, 82, 40), rgb(3, 79, 38)) border-box;
-border-radius: 10px;
-  transition: 0.3s;
-  border: 0.1rem solid transparent;
-
+border: 0;
+border-radius: 7px;
+transition: 0.3s;
 }
 
 .button-menu:hover {
-  transform: translateY(-2.5px);
+  transform: translateY(-0px);
   transition: 0.3s;
+background: rgb(96, 275, 230);
+
+  transition: 0.3s;
+
 }
 
-.buttom-menu {}
 
 
 button:active {background-color:rgb(0, 221, 255);}
@@ -228,37 +160,14 @@ h4
   color: white;
 }
 
-
-
-
-
-
-
-
 button:hover
 
 {
   box-shadow: 5px rgba(17, 217, 180, 0.976);
-  background-color: rgb(0, 255, 153);
+  background-color: rgb(0, 213, 255);
   transition: .2s ease-out;
   color: rgb(252, 252, 252);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .logo img 
 {
@@ -269,29 +178,12 @@ button:hover
   
   }
 
-
-
-
-
-
-
-
-
   .logo a {text-decoration: none;}
-
-
-
-
-
-
-
 
 
   .Naglowek {
 padding-top: 220px;
-
 display: flex;
-
 height: 700px; 
 z-index:2;
 clip-path: polygon(100% 0%, 0% 0% , 0.00% 93.70%, 3.33% 93.57%, 6.67% 93.45%, 10.00% 93.36%, 13.33% 93.27%, 16.67% 93.21%, 20.00% 93.16%, 23.33% 93.13%, 26.67% 93.12%, 30.00% 93.12%, 33.33% 93.14%, 36.67% 93.18%, 40.00% 93.23%, 43.33% 93.30%, 46.67% 93.39%, 50.00% 93.49%, 53.33% 93.61%, 56.67% 93.75%, 60.00% 93.90%, 63.33% 94.08%, 66.67% 94.26%, 70.00% 94.47%, 73.33% 94.69%, 76.67% 94.93%, 80.00% 95.18%, 83.33% 95.45%, 86.67% 95.73%, 90.00% 96.03%, 93.33% 96.35%, 96.67% 96.68%, 100.00% 97.03%);
@@ -299,52 +191,32 @@ clip-path: polygon(100% 0%, 0% 0% , 0.00% 93.70%, 3.33% 93.57%, 6.67% 93.45%, 10
 }
 
 
-
-
-
-
-
-
-
 @media screen and (max-width:700px) 
 {.Naglowek {height: 900px; 
   background-size: cover;}}
 
-
-
 .button2 {
 
 position: relative;
-top: 270px; 
-align-content: center;
-margin: 0 auto;
-display: flex;
-justify-content: center;
-padding: 14px 50px;
+top: 210px; 
+right: 420px;
 
- font-size: 15px; 
+
+padding: 13px 20px;
+font-size: 15px; 
 cursor: pointer;
 color: rgb(255, 252, 252);
 font-weight: 700;
-
-background: linear-gradient(30deg, rgb(0, 202, 111), rgb(18, 158, 97)) padding-box,
-linear-gradient(30deg, rgb(170, 222, 196), rgb(6, 141, 62)) border-box;
-border-radius: 10px;
-  border: 0.12rem solid transparent;
-
-
+background: linear-gradient(30deg, rgba(0, 202, 111, 0),
+ rgba(0, 202, 111, 0));
+border-radius: 30px;
+border: 0.14rem solid white;
 transition: 0.2s ease-in-out;
-
+animation: 2s appear;
 
 
   
-  animation: 2s appear;
-  
- 
-
 }
-
-
 
 @keyframes appear {
   from {
@@ -361,8 +233,6 @@ transition: 0.2s ease-in-out;
 }
 
 
-
-
 .button2 span {
 
   padding-left: 5px;
@@ -370,15 +240,9 @@ transition: 0.2s ease-in-out;
    top: 2px;
    font-size: 16px; 
    color: rgb(255, 254, 254);
-     transition: 0.3s;
-  
+    transition: 0.3s;
+
   }
-
-
-
-
-
-
 
 
 .button2:hover.button2 span 
@@ -390,17 +254,9 @@ transition: 0.2s ease-in-out;
   }
 
 .button2:hover {
-
-
-    transition: 0.3s;
-     transform: translateY(-3px);
-
+transition: 0.3s;
+transform: translateY(-3px);
 }
-
-
-
-
-
 @media  screen and (max-width: 800px) {
   .button2{
   position: relative;
@@ -409,24 +265,8 @@ transform: translate(0%, 20%);
 }
 }
 
-
-
-
-
-
-
-
 @media screen and (max-width:700px) 
 {
-
-
-
-
-
-
- 
-
-
 
 
  .Naglowek p 
@@ -434,16 +274,10 @@ transform: translate(0%, 20%);
  
  {font-size:1rem;
   display: flex; 
-
   align-content: center;
 color: green;}
 
-
  }
-
-
-
-
 
 
 h6 {color: rgba(0, 0, 0, 0.879); 
@@ -454,26 +288,17 @@ h6 {color: rgba(0, 0, 0, 0.879);
   margin-left: 1px; 
   margin-top: -45px;}
 
-
-
-
-
-
-
-
-
-#O-mnie {
+#Banner {
   
   position: relative; 
   bottom: 100px;
   z-index: 1; 
-  background-image: url("wallpaper-blob.png");
+  background-image: url("Banner.JPg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: 122%;
   height: 760px;
 }
-
 
 
 #O-mnie2 {
@@ -486,47 +311,29 @@ h6 {color: rgba(0, 0, 0, 0.879);
 
 
 
-
-
-
-
-
-
-
-
-
-
-.Naglowek2 h1 span {color: rgb(0, 202, 111); padding-left: 10px;
+.Naglowek2 h1 span {color: rgb(251, 254, 255); padding-left: 10px;
   font-weight: 900;
 }
 
 
-
-
-
-
-
-
 .Naglowek2 p {text-indent: 0px;
 
-  color: rgb(174, 233, 202);
+  color: rgb(255, 255, 255);
 
 margin: 0 auto;
 text-align: center;
    display: flex; 
   position: relative;
-   top: 200px;
+   top: 230px;
+   right: -30px;
    justify-content: center;
-font-weight: 600;
+font-weight: 400;
 font-size: 16px;
-
    margin: 15px;
     animation: 1.8s appear;
+    width: 600px;
   
- 
-
 }
-
 
 
 @keyframes appear {
@@ -544,69 +351,47 @@ font-size: 16px;
 }
 
 
-
-
-
-
-
-
-
-
 .Naglowek2 p:first-letter {color: rgb(52, 0, 239);
   font-weight: 200; 
   font-size: 2rem;}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 .Naglowek2
 
 {padding-top:60px;
-
-
 margin: 20px;
 height: 500px; 
 
-
   }
-
-
-
-
-
-
-
-
-
+.Naglowek2 h4{
+  font-size: 12px;
+  border:1px solid white;
+  border-radius: 150px;
+  padding: 7px;
+  width: 110px;
+  position: relative;
+  left: 100px;
+  top: 100px;
+}
 
    .Naglowek2 h1 {
     
-font-size: 65px;
-    font-weight: 900;
+font-size: 52px;
+    font-weight: 500;
     padding: 10px;
-   line-height: 75px;
+    left: 60px;
+   line-height: 45px;
    position: relative;
    top: 310px;
-   text-align: center;
+   text-align: left;
     padding-bottom: 50px;
     color: rgb(255, 255, 255);
     width: 100%;
+cursor: default;
+ animation: 1.3s appear;
+    width: 700px;
 
-cursor: pointer;
-
-        animation: 1.3s appear;
   
- 
 
 }
 
@@ -639,33 +424,19 @@ transform: translate(0%, 60%);
 }
 
 
-
-
-
-
-
 @media screen and (max-width: 700px)
 
  {
   
   
-  
-  
-  
   .fota-omnie
   {float: right; 
-  
     top: 70px; 
     margin-right: 40px;
-   
     padding: 30px; }
   
   
-  
-  
-  
   }
-
 
 
 
@@ -673,15 +444,11 @@ transform: translate(0%, 60%);
 
 
 
-
-
-
 {.Naglowek2 h1, .Naglowek2 p{
   position: relative; 
   top: 20px; 
-   padding: 30px; }}
-
-
+   padding: 30px;
+ }}
 
 
    .Naglowek2 h2 {
@@ -691,7 +458,6 @@ transform: translate(0%, 60%);
     text-align: left;
     position: relative;
     left: 20px;
-  
     border-radius: 120px 30px / 30px 3px;
     z-index: -4;
     color: white;
@@ -704,8 +470,7 @@ background: linear-gradient(30deg, rgb(7, 34, 102), rgb(0, 58, 205)) padding-box
 linear-gradient(30deg, rgb(122, 137, 177), rgb(0, 58, 205)) border-box;
 border-radius: 12px;
   border: 0.12rem solid transparent;
-
-        position: relative;
+  position: relative;
    top: 220px;
 width: 120px;
 
@@ -727,61 +492,59 @@ width: 120px;
   top: 40px;
   justify-content: center;
 
-
-
-
-
 }
 
 .card {
 
 padding:70px 40px;
+cursor: default;
 
-cursor: pointer;
-background: linear-gradient(30deg, rgb(0, 4, 27), rgb(3, 7, 30)) padding-box,
-linear-gradient(30deg, rgb(0, 255, 110), rgb(76, 55, 115)) border-box;
-border-radius: 20px 20px 20px 20px;
-  border: 0.1rem solid transparent;
+
 transition: 0.3s ease-in-out;
-scale: 0.95;
+scale: 0.85;
 width: 370px;
-
-
-
 
 }
 
-
-.card:hover {
-  scale: 0.98;
+.card img:hover {
+  scale: 0.952;
   transition: 0.3s;
 }
 
 .card img{
   color: white;
-  background: linear-gradient(50deg, rgb(0, 202, 111), rgb(0, 202, 111));
-  font-size: 57px;
-  padding: 16px;
-  border-radius: 20px 11px 11px 11px;
- 
+   background: linear-gradient(rgb(0, 113, 206), rgb(0, 119, 149)) padding-box,
+              linear-gradient(to right, rgb(0, 225, 255), rgb(35, 201, 252)) border-box;
+  border-radius: 0.6em;
+  border: 1px solid transparent;
+  transition: 0.3s;
+  font-size: 24px;
+  padding: 21px;
+
+
   display: flex;
-  justify-content: flex-start;
-width: 58px;
+  justify-content: center;
+width: 74px;
   margin-bottom: 15px;
+  position: relative;
+  left: -2%;
 }
 
 .card h2 {
-  color: rgb(0, 202, 111);
-  font-weight: 900;
+  color: rgb(0, 149, 169);
+  font-weight: 600;
   text-align: left;
-  line-height: 34px;
+  line-height: 54px;
+  position: relative;
+  left: -4px;
     font-size: 26px;
 }
 .card  p {
   color: rgba(211, 225, 222, 0.748);
   font-weight: 300;
   font-size: 17px;
-    text-align: left;
+  padding-top: -5px;
+    text-align: left
 }
 .card a {
 margin: 50px;
@@ -791,7 +554,7 @@ top: 20px;
 left: -106px;
 font-size: 18px;
 text-decoration: none;
-text-align: left;
+text-align: center;
 }
 .card a:hover {
   color:rgb(70, 43, 226);
@@ -830,15 +593,22 @@ background-color: rgba(3, 9, 5, 0);
 .sekcja-oferta
 {
 padding-top: 0px;
-position: relative;
-top: -90px;
+display: flex;
+justify-content: center;
 margin: 30px;
 height: 660px;}
 
-.resp-zdjecie  {}
+.resp-zdjecie  {width: 200px; display: flex;justify-content: center;
+  margin-right: 20%;
+}
 
 
-.resp-zdjecie img {width: 780px; height:500px;border-radius: 20px 20px 100px;  position: relative; right: 300px; scale: 0.9; top: 55px; }
+.resp-zdjecie img {width: 380px;
+   height:400px;
+   border-radius: 20px 20px 100px; 
+  ;
+     
+      top: 55px; }
 
 @media only screen and (max-width: 800px) {
   .resp-zdjecie img {width: 286px; height: 200px;border-radius: 20px; display: flex; justify-content: center; margin: 0 auto;}
@@ -847,33 +617,23 @@ height: 660px;}
 
 
 
-.ofertax h2 {
-margin: 0 auto;
-position: relative;
-left: 270px;
-top: -430px;
-color: rgb(0, 202, 111);
-height: 60px;
-
-font-size: 59px;
-font-weight: 800;
-width: 550px;
-border-bottom: 0px solid rgba(5, 195, 5, 0.778);
-
+.oferta {width: 20%;
+  
 
 }
 
+
 .oferta h4 {
-  margin: 0 auto;
+
   position: relative;
-  top: -410px;
+  top: 0px;
   font-size: 22px;
-  left: 305px;
-  width: 440px;
+  left: 05px;
+
   text-align: left;
 }
 
-.oferta p {color: white; font-size: 20px;margin: 0 auto; position: relative; left: -240px;border-radius: 20px;  padding: 20px; width: 620px;} 
+.oferta p {color: white; font-size: 20px;margin: 0 auto; position: relative; left: 0px;border-radius: 20px;  padding: 20px;} 
 
 .lista{
   display: flex;
@@ -883,28 +643,21 @@ border-bottom: 0px solid rgba(5, 195, 5, 0.778);
 list-style-type: square;
 color: white; 
 text-align: left;
-width: 400px;
+width: 300px;
 position: relative;
-left: 300px;
-top: -310px;
+left: 0=00px;
+top: 90px;
 font-size: 16px;
 line-height: 22px;
-
-
-
 
 }
 .lista li {
 padding-left: 19px;
-
-
 border-radius: 12px;
-list-style-image: url('check_circle.png');
-
+list-style-type: square;
 position: relative;
 bottom: 70px;
 color: green;
-
 
 }
 .lista li a {
@@ -917,11 +670,6 @@ font-size: 17px;
 li::marker {
   color: rgb(0, 148, 0);
   font-size: 2px;
-
-
-
-
-
 }
 
 .lista li a span {
